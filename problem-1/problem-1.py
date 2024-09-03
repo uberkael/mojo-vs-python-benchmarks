@@ -1,5 +1,4 @@
 def length_of_last_word(enterword):
-
     count = 0
 
     for i in range(len(enterword)-1, -1, -1):
@@ -8,7 +7,8 @@ def length_of_last_word(enterword):
         elif count > 0:
             break
 
-    print("Length of last word", count)
+    return count
+
 
 def main():
     [length_of_last_word("Hello World") for _ in range(100000)]
